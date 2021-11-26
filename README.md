@@ -17,4 +17,5 @@ Este código permite, de manera aproximada, calcular el crecimiento de las pobla
 
 Plus. En el caso de los reptiles hay una PEQUEÑA función que permite saber de manera aproximada cuantas veces uno de sus individuos cambio de piel. 
 
-## Sin correcciones por el momento
+## Correcciones
+Se corrigió el UML
