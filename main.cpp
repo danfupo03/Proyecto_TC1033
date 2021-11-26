@@ -7,39 +7,55 @@
 
 int main()
 {
-    //Objeto mamíferos
-    Mamiferos especie_1("Odocoileus virginianus (Venado de cola blanca)", 50, 0);
-    std::cout << "La especie " << especie_1.get_especie() << ","
-              << " tiene una población de " << especie_1.get_poblacion() <<" individuos" << "." << " A los " << especie_1.get_años() << " años." << " "\
-              << std::endl;
+    //Objeto Mamíferos
+    cout<<"----------Mamíferos----------"<<"\n"<<endl;
     
-    especie_1.aumento_poblacion(3);
+    Mamifero animal_1("Odocoileus virginianus (Venado de cola blanca)",50);
+    cout<<"La especie "<<animal_1.getEspecie()<<","<<endl;
+    cout<<"tiene una población de "<<animal_1.getPoblacion()<<" individuos,"<<endl;
+    cout<<"a los "<<animal_1.getAños()<<" años."<<"\n"<<endl;
     
-    std::cout << "La población de la especie "<< especie_1.get_especie() << ","
-              << " despues de " << especie_1.get_años() << " años es igual a " << especie_1.get_poblacion() << " individuos." << "\n"
-              << std::endl;
+    animal_1.aumentaPoblacionMamiferos(3);
+    
+    cout<<animal_1.getAños()<<" años despues..."<<"\n"<<endl;
+    
+    cout<<"La especie "<<animal_1.getEspecie()<<","<<endl;
+    cout<<"tiene aproximadamente "<<animal_1.getPoblacion()<<" individuos,"<<endl;
+    cout<<"despues de "<<animal_1.getAños()<<" años."<<"\n"<<endl;
     
     //Objeto Reptiles
-    Reptiles especie_2("Crotaus asquilus (Cascabel oscura)", 50, 0, 0);
-    std::cout << "La especie " << especie_2.get_especie() << ","
-              << " tiene una población de " << especie_2.get_poblacion() <<" individuos," << " a los " << especie_2.get_años() << " años y ha mudado de piel un total de " << especie_2.get_piel() << " veces." << " "\
-              << std::endl;
+    cout<<"----------Reptiles----------"<<"\n"<<endl;
     
-    especie_2.aumento_poblacion(3);
-    especie_2.muda_piel(3);
+    Reptil animal_2("Crotaus asquilus (Cascabel oscura)", 50, 0);
+    cout<<"La especie "<<animal_2.getEspecie()<<","<<endl;
+    cout<<"tiene una población de "<<animal_2.getPoblacion()<<" individuos,"<<endl;
+    cout<<"a los "<<animal_2.getAños()<<" años."<<endl;
+    cout<<"Ha mudado de piel "<<animal_2.getPiel()<<" veces."<<"\n"<<endl;
     
-    std::cout << "La población de la especie "<< especie_2.get_especie() << ","
-              << " despues de " << especie_2.get_años() << " años es igual a " << especie_2.get_poblacion() << " individuos y aproximadamente uno de sus individuos a mudado de piel un total de " << especie_2.get_piel() << " veces.\n" << std::endl;
+    animal_2.aumentaPoblacionReptiles(3);
+    animal_2.mudaPiel(3);
     
-    //Objeto Anfibio
-    Anfibios especie_3("Rana linnaeus (Rana de estanque)", 50, 0);
-    std::cout << "La especie " << especie_3.get_especie() << ","
-              << " tiene una población de " << especie_3.get_poblacion() <<" individuos," << " a los " << especie_3.get_años() << " años."<< " "\
-              << std::endl;
+    cout<<animal_2.getAños()<<" años despues..."<<"\n"<<endl;
     
-    especie_3.aumento_poblacion(3);
+    cout<<"La especie "<<animal_2.getEspecie()<<","<<endl;
+    cout<<"tiene aproximadamente "<<animal_2.getPoblacion()<<" individuos,"<<endl;
+    cout<<"despues de "<<animal_2.getAños()<<" años."<<endl;
+    cout<<"Uno de sus individuos ha mudado de piel aproximadamente "<<animal_2.getPiel()<<" veces."<<"\n"<<endl;
     
-    std::cout << "La población de la especie "<< especie_3.get_especie() << ","
-              << " despues de " << especie_3.get_años() << " años es igual a " << especie_3.get_poblacion() << " individuos." << std::endl;
+    //Objeto Anfibios
+    cout<<"----------Anfibios----------"<<"\n"<<endl;
+    
+    Anfibio animal_3("Rana linnaeus (Rana de estanque)",50);
+    cout<<"La especie "<<animal_3.getEspecie()<<","<<endl;
+    cout<<"tiene una población de "<<animal_3.getPoblacion()<<" individuos,"<<endl;
+    cout<<"a los "<<animal_3.getAños()<<" años."<<"\n"<<endl;
+    
+    animal_3.aumentaPoblacionAnfibios(3);
+    
+    cout<<animal_1.getAños()<<" años despues..."<<"\n"<<endl;
+    
+    cout<<"La especie "<<animal_3.getEspecie()<<","<<endl;
+    cout<<"tiene aproximadamente "<<animal_3.getPoblacion()<<" individuos,"<<endl;
+    cout<<"despues de "<<animal_3.getAños()<<" años."<<endl;
     
 }
