@@ -1,3 +1,6 @@
+//#ifndef REPTILES_H_
+#define REPTILES_H_
+
 #include<string>
 #include "Animales.h"
 
@@ -10,6 +13,7 @@ class Reptil: public Animal
 
     public:
         //Constructor
+        Reptil(){}
         Reptil(string esp, int pob, int sk): Animal(esp, pob, 0){
             piel = sk;
         }
@@ -32,7 +36,8 @@ class Reptil: public Animal
             poblacion = mortalidad + (poblacion / 3);
             i = i + 1;
         }
-        años = años + tiempo;
+        years = years + tiempo;
     }
     
 };
+
