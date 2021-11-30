@@ -1,28 +1,54 @@
+#ifndef ANIMALES_H
+#define ANIMALES_H
+
+#include<sstream>
 #include<string>
-#include "Animales.h"
 
 using namespace std;
 
-class Anfibio: public Animal
-{
+class Animal{
 
+    protected:
+        string especie;
+        int poblacion;
+        int years;
+        int mortalidad = 0;
+        int i = 0;
+        
     public:
-        //Constructores
-        Anfibio(string esp, int pob): Animal(esp, pob, 0){
-        }
-
-
-    void aumentaPoblacionAnfibios(int tiempo) //Función que calcula aproximadamente el crecimiento de la población de la especie.
-    {
-        while(i < tiempo)
-        {
-            mortalidad = poblacion - (poblacion * 0.5);
-            poblacion = mortalidad + (poblacion * 2);
-            i = i + 1;
-        }
-        años = años + tiempo;
-    }
     
+        //Constructor
+        Animal(){}
+        Animal(string esp, int pob, int y){
+            especie = esp;
+            poblacion = pob;
+            years = y;
+        }
+
+        //Getters
+        string getEspecie(){
+            return especie;
+        }
+        
+        int getPoblacion(){
+            return poblacion;
+        }
+        
+        int getAños(){
+            return years;
+        }
+
+        //Setters
+        void setYears(int y){
+            years = y;
+        }
+        
+        string toString()const{
+
+            stringstream aux;
+            aux << "la especie es " << especie << " su poblacion es de "<< poblacion << " individuos." << "\n";
+            return aux.str();
+        }
 };
 
-
+#endif
