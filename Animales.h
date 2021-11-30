@@ -1,7 +1,8 @@
 #ifndef ANIMALES_H
 #define ANIMALES_H
 
-#include<iostream>
+#include<sstream>
+#include<string>
 
 using namespace std;
 
@@ -10,18 +11,18 @@ class Animal{
     protected:
         string especie;
         int poblacion;
-        int años;
+        int years;
+        int mortalidad = 0;
+        int i = 0;
         
     public:
     
-        int mortalidad = 0;
-        int i = 0;
-    
         //Constructor
+        Animal(){}
         Animal(string esp, int pob, int y){
             especie = esp;
             poblacion = pob;
-            años = y;
+            years = y;
         }
 
         //Getters
@@ -34,14 +35,20 @@ class Animal{
         }
         
         int getAños(){
-            return años;
+            return years;
         }
 
         //Setters
-        void setAños(int y){
-            años = y;
+        void setYears(int y){
+            years = y;
         }
         
+        string toString()const{
+
+            stringstream aux;
+            aux << "la especie es " << especie << " su poblacion es de "<< poblacion << " individuos." << "\n";
+            return aux.str();
+        }
 };
 
 #endif
