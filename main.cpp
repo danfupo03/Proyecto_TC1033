@@ -5,7 +5,7 @@
  * 03/12/2021
  */
 
-/**
+/*
  * Descripcion este es un proyecto para la clase de Pensamiento
  * Computacional Orientado a Objetos. Es un programa que captura
  * diferentes tipos de animales con sus respectivas poblaciones, y nos
@@ -24,9 +24,9 @@ void menu(){
 
     //Imprime las opciones que va a tener el sistema
     cout << "Menu:\n";
-    cout << "1. Mostrar mamiferos. \n";
-    cout << "2. Mostrar reptiles. \n";
-    cout << "3. Mostrar anfibios. \n";
+    cout << "1. Mostrar mamiferos \n";
+    cout << "2. Mostrar reptiles \n";
+    cout << "3. Mostrar anfibios \n";
     cout << "4. Agregar mamifero \n";
     cout << "5. Agregar reptil \n";
     cout << "6. Agregar anfibio \n";
@@ -71,25 +71,25 @@ int main(int argc, char* argv[]){
                 break;
 
               case 4:
-                  cout<< "Dime la especie " ;
+                  cout<< "Dime la especie: " ;
                   cin >> temp_especie;
-                  cout<< "Dime la poblacion " ;
+                  cout<< "Dime la poblacion: " ;
                   cin >> temp_poblacion;
                   reserva.agregaMamifero(temp_especie, temp_poblacion);
                 break;
 
               case 5:
-                  cout<< "Dime la especie " ;
+                  cout<< "Dime la especie: " ;
                   cin >> temp_especie;;
-                  cout<< "Dime la poblacion " ;
+                  cout<< "Dime la poblacion: " ;
                   cin >> temp_poblacion;
-                  reserva.agregaReptil(temp_especie, temp_poblacion, temp_piel);
+                  reserva.agregaReptil(temp_especie, temp_poblacion);
                 break;
 
               case 6:
-                  cout<< "Dime la especie " ;
+                  cout<< "Dime la especie: " ;
                   cin >> temp_especie;
-                  cout<< "Dime la poblacion " ;
+                  cout<< "Dime la poblacion: " ;
                   cin >> temp_poblacion;
                   reserva.agregaAnfibio(temp_especie, temp_poblacion);
                 break;
