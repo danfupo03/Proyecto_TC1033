@@ -1,8 +1,13 @@
-//#ifndef MAMIFEROS_H_
+/*
+ * Proyecto TC1033
+ * Daniel Emilio Fuentes Portaluppi
+ * A01708302
+ * 03/12/21
+ */
+
 #define MAMIFEROS_H_
 
 #include<string>
-#include<iostream>
 #include "Animales.h"
 
 using namespace std;
@@ -17,3 +22,4 @@ class Mamifero: public Animal
         }
     
 };
+
