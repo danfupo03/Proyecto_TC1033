@@ -25,7 +25,7 @@ using namespace std;
 #include "Reptiles.h"
 #include "Anfibios.h"
 
-const int MAX = 100; //constante de tama�o de arreglos
+const int MAX = 100; //constante de tamaño de arreglos
 
 class Reserva {
 
@@ -50,7 +50,7 @@ class Reserva {
         void muestraAnfibios();
 
         void agregaMamifero(string especie, int poblacion);
-        void agregaReptil(string especie, int poblacion, int piel);
+        void agregaReptil(string especie, int poblacion);
         void agregaAnfibio(string especie, int poblacion);
 
 };
@@ -74,7 +74,7 @@ void Reserva::creaMamiferos(){
 
 void Reserva::creaReptiles(){
     
-    rept[0] = Reptil("Crotaus asquilus (Cascabel oscura)", 50, 0);
+    rept[0] = Reptil("Crotaus asquilus (Cascabel oscura)", 50);
     
 }
 
@@ -84,14 +84,12 @@ void Reserva::creaAnfibios(){
 
 }
 
-/**
+/*
  * Utiliza el arreglo Asalariado y su indice.
  * Recorra todo el arreglo, imprimiendo cada uno de los objetos que
  * pertenecen al mismo.
- *
- * @param
- * @return
 */
+
 void Reserva::muestraMamiferos(){
 
   //recorre el arreglo e imprime cada objeto.
@@ -158,10 +156,10 @@ void Reserva::agregaMamifero(string especie, int poblacion){
  * @param
  * @return
  */
-void Reserva::agregaReptil(string especie, int poblacion,int piel){
+void Reserva::agregaReptil(string especie, int poblacion){
 
     irept += 1;
-    Reptil aux(especie, poblacion, piel);
+    Reptil aux(especie, poblacion);
     rept[irept] = aux;
 
 }
@@ -182,4 +180,4 @@ void Reserva::agregaAnfibio(string especie, int poblacion){
 
 }
 
-#endif // EMPRESA_H_
+#endif 
