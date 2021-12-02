@@ -5,17 +5,18 @@ Proyecto creado por Daniel Emilio Fuentes Portaluppi A01708302
 Este es el proyecto de la unidad formativa TC1033
 
 
-# Poblaciones de especies en el Cerro del Cimatario
+# Registro de poblaciones y especies en una reserva
 
 ## Contexto
 
-El parque nacional El Cimatario es una reserva protegida que se ubica en el estado de Quéretaro. En este habitan centenares de especies que conviven entre sí. Pero el crecimiento desmedido de alguna de ellas podría generar una plaga que ocasione un desbalance en el ecosistema. 
+Hay muchas reservas por todo el mundo y muchas veces científicos requieren una forma en la que puedan registrar especies y sus poblaciones. Un ejemplo de este tipo de reservas es el parque nacional El Cimatario que se enceuntra en el estado de Querétaro. En este lugar habitan muchas especies y puede llegar a ser difícil mantener un registro de todas.
 
 ## Funcionalidad
 
-Este código permite, de manera aproximada, calcular el crecimiento de las poblaciones de algunas especies. Dichas especies están conformadas por Mamíferos, Reptiles y Anfibios. Cada una con su distinta tasa de mortalidad y natalidad. Hay una función (con distintos valores dependiendo de la clase) que permite calcular dicho crecimiento. 
-
-Plus. En el caso de los reptiles hay una PEQUEÑA función que permite saber de manera aproximada cuantas veces uno de sus individuos cambio de piel. 
+Este código permite mantener un registro de todas las especies que habitan en la reserva además de sus poblaciones y si tiempo después se descubre que una especie nueva emigró a esa reserva se puede añadir directamente al código con una de las opciones. Además el registro se divide en mamíferos, reptiles y anfibios para que se pueda llevar el conteo de una manera más ordenada.
 
 ## Correcciones
-Se corrigió el UML
+Se corrigió el UML por segunda ocasión.
+Se añadieron los datos personales a los archivos y se añadieron comentarios que explican la función del código.
+Se eliminó la función de aumentarPoblación.
+Se añadió el tema de composición al código y se ajusto el ReadMe para que estuviera adecuado con el nuevo código. 
