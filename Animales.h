@@ -1,3 +1,10 @@
+/*
+ * Proyecto TC1033
+ * Daniel Emilio Fuentes Portaluppi
+ * A01708302
+ * 03/12/21
+ */
+
 #ifndef ANIMALES_H
 #define ANIMALES_H
 
@@ -46,9 +53,11 @@ class Animal{
         string toString()const{
 
             stringstream aux;
-            aux << "la especie es " << especie << " su poblacion es de "<< poblacion << " individuos." << "\n";
+            aux << "La especie es " << especie << " su poblacion es de "<< poblacion << " individuos." << "\n";
             return aux.str();
         }
 };
+
+#endif
 
 #endif
