@@ -17,6 +17,6 @@ Este código permite mantener un registro de todas las especies que habitan en l
 
 ## Correcciones
 Se corrigió el UML por segunda ocasión.
-Se añadieron los datos personales a los archivos y se añadieron comentarios que explican la función del código.
+Se añadieron los datos personales a los archivos y se añadieron comentarios que explican la función del código. \n
 Se eliminó la función de aumentarPoblación.
 Se añadió el tema de composición al código y se ajusto el ReadMe para que estuviera adecuado con el nuevo código. 
