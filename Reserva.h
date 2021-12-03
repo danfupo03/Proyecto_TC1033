@@ -1,4 +1,4 @@
-/*
+//*
  * Proyecto TC1033
  * Daniel Emilio Fuentes Portaluppi
  * A01708302
@@ -166,7 +166,7 @@ void Reserva::agregaMamifero(string especie, int poblacion){
 /*
  * Utiliza arreglo de Reptil y su ultimo indice.
  * Recibe la especie y poblacion.
- * El metodo crea el objeto Mamifero y lo
+ * El metodo crea el objeto Reptil y lo
  * agrega al arreglo
  */
 void Reserva::agregaReptil(string especie, int poblacion){
@@ -180,7 +180,7 @@ void Reserva::agregaReptil(string especie, int poblacion){
 /*
  * Utiliza arreglo de Anfibio y su ultimo indice.
  * Recibe la especie y poblacion.
- * El metodo crea el objeto Mamifero y lo
+ * El metodo crea el objeto Anfibio y lo
  * agrega al arreglo
  */
 void Reserva::agregaAnfibio(string especie, int poblacion){
@@ -192,4 +192,3 @@ void Reserva::agregaAnfibio(string especie, int poblacion){
 }
 
 #endif 
-
