@@ -6,9 +6,8 @@
  */
 
 /*
- * Clase Reserva, maneja los animales, divididos en
- * Mamiferos, Reptiles e Insectos
- *
+ * Clase Reserva, maneja grupos de animales, divididos en
+ * Mamiferos, Reptiles y Anfibios
  */
 
 #ifndef RESERVA_H_
@@ -40,7 +39,7 @@ class Reserva {
     public :
         //Constuctor
         Reserva();
-        // Metodos miembros de la clase
+        // Metodos de la clase
         void creaMamiferos();
         void creaReptiles();
         void creaAnfibios();
@@ -56,6 +55,11 @@ class Reserva {
 };
 
 
+/*
+ * Constructor por default
+ *
+ * @return Objeto Reserva
+ */
 Reserva::Reserva(){
 
     imami = 0;
@@ -63,29 +67,49 @@ Reserva::Reserva(){
     ianfi = 0;
 }
 
-
+/*
+ * Utliza el arreglo de tipo Mamifero.
+ * Llena el arreglo con 2 ejemplos.
+*/
 void Reserva::creaMamiferos(){
 
     //Cada espacio de arreglo tiene diferente objeto y manda como
     //parametro sus variables instancia
-    mami[0] = Mamifero("Odocoileus virginianus (Venado de cola blanca)", 50);
-                
+    mami[0] = Mamifero("Venado", 50);
+    imami += 1;
+    mami[1] = Mamifero("Coyote", 75);
 }
 
+/*
+ * Utliza el arreglo de tipo Reptil.
+ * Llena el arreglo con 2 ejemplos.
+*/
 void Reserva::creaReptiles(){
     
-    rept[0] = Reptil("Crotaus asquilus (Cascabel oscura)", 50);
+    //Cada espacio de arreglo tiene diferente objeto y manda como
+    //parametro sus variables instancia
+    rept[0] = Reptil("Serpiente", 50);
+    irept += 1;
+    rept[1] = Reptil("Cocodrilo", 35);
     
 }
 
+/*
+ * Utliza el arreglo de tipo Anfibio.
+ * Llena el arreglo con 2 ejemplos.
+*/
 void Reserva::creaAnfibios(){
 
-    anfi[0] = Anfibio("Rana linnaeus (Rana de estanque)", 50);
+    //Cada espacio de arreglo tiene diferente objeto y manda como
+    //parametro sus variables instancia
+    anfi[0] = Anfibio("Rana", 200);
+    ianfi += 1;
+    anfi[1] = Anfibio("Ajolote", 125);
 
 }
 
 /*
- * Utiliza el arreglo Asalariado y su indice.
+ * Utiliza el arreglo Mamifero y su indice.
  * Recorra todo el arreglo, imprimiendo cada uno de los objetos que
  * pertenecen al mismo.
 */
@@ -99,13 +123,10 @@ void Reserva::muestraMamiferos(){
 
 }
 
-/**
- * Utiliza el arreglo PorHora y su indice.
+/*
+ * Utiliza el arreglo Reptil y su indice.
  * Recorra todo el arreglo, imprimiendo cada uno de los objetos que
  * pertenecen al mismo.
- *
- * @param
- * @return
 */
 void Reserva::muestraReptiles(){
 
@@ -115,14 +136,11 @@ void Reserva::muestraReptiles(){
 
 }
 
-/**
- * Utiliza el arreglo Practicante y su indice.
+/*
+ * Utiliza el arreglo Anfibio y su indice.
  * Recorra todo el arreglo, imprimiendo cada uno de los objetos que
  * pertenecen al mismo.
- *
- * @param
- * @return
- */
+*/
 void Reserva::muestraAnfibios(){
 
     for(int i = 0 ; i <= ianfi ; i++){
@@ -131,14 +149,11 @@ void Reserva::muestraAnfibios(){
 
 }
 
-/**
- * Utiliza arreglo de Asalariado y su ultimo indice.
- * Recibe el nombre y salario.
- * El metodo genera el nuevo id, crea el objeto Asalariado y lo
+/*
+ * Utiliza arreglo de Mamifero y su ultimo indice.
+ * Recibe la especie y poblacion.
+ * El metodo crea el objeto Mamifero y lo
  * agrega al arreglo
- *
- * @param
- * @return
  */
 void Reserva::agregaMamifero(string especie, int poblacion){
 
@@ -148,13 +163,11 @@ void Reserva::agregaMamifero(string especie, int poblacion){
 
 }
 
-/**
- * Utiliza arreglo de PorHora y su ultimo indice.
- * Recibe el nombre, horas trabajadas y su salario
- * El metodo genera el nuevo id, crea el objeto PorHora y lo agrega al arreglo
- *
- * @param
- * @return
+/*
+ * Utiliza arreglo de Reptil y su ultimo indice.
+ * Recibe la especie y poblacion.
+ * El metodo crea el objeto Mamifero y lo
+ * agrega al arreglo
  */
 void Reserva::agregaReptil(string especie, int poblacion){
 
@@ -164,13 +177,11 @@ void Reserva::agregaReptil(string especie, int poblacion){
 
 }
 
-/**
- * Utiliza arreglo de Practicante y su ultimo indice.
- * Recibe el nombre, horas trabajadas y su salario
- * El metodo genera el nuevo id, crea el objeto PorHora y lo agrega al arreglo
- *
- * @param
- * @return
+/*
+ * Utiliza arreglo de Anfibio y su ultimo indice.
+ * Recibe la especie y poblacion.
+ * El metodo crea el objeto Mamifero y lo
+ * agrega al arreglo
  */
 void Reserva::agregaAnfibio(string especie, int poblacion){
 
@@ -181,3 +192,4 @@ void Reserva::agregaAnfibio(string especie, int poblacion){
 }
 
 #endif 
+
