@@ -17,7 +17,8 @@ Este código permite mantener un registro de todas las especies que habitan en l
 
 ## Consideraciones
 
-A la hora de introducir una especie nueva no escribir espacio todo debe estar junto. Si se escribe un número diferente a las opciones del menu el codigo se cerrara automaticamente.
+- A la hora de introducir una especie nueva no escribir espacio todo debe estar junto. 
+- Si se escribe un número diferente a las opciones del menu el codigo se cerrara automaticamente.
 
 ## Correcciones
 1.  Se corrigió el UML por segunda ocasión.
