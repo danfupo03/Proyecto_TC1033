@@ -16,7 +16,7 @@ Hay muchas reservas por todo el mundo y muchas veces científicos requieren una 
 Este código permite mantener un registro de todas las especies que habitan en la reserva además de sus poblaciones y si tiempo después se descubre que una especie nueva emigró a esa reserva se puede añadir directamente al código con una de las opciones. Además el registro se divide en mamíferos, reptiles y anfibios para que se pueda llevar el conteo de una manera más ordenada.
 
 ## Correcciones
-1 Se corrigió el UML por segunda ocasión.
-2 Se añadieron los datos personales a los archivos y se añadieron comentarios que explican la función del código.
-3 Se eliminó la función de aumentarPoblación.
-4 Se añadió el tema de composición al código y se ajusto el ReadMe para que estuviera adecuado con el nuevo código. 
+ 1  Se corrigió el UML por segunda ocasión.
+ 2  Se añadieron los datos personales a los archivos y se añadieron comentarios que explican la función del código.
+ 3  Se eliminó la función de aumentarPoblación.
+ 4  Se añadió el tema de composición al código y se ajusto el ReadMe para que estuviera adecuado con el nuevo código. 
