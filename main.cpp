@@ -9,7 +9,7 @@
  * Descripcion este es un proyecto para la clase de Pensamiento
  * Computacional Orientado a Objetos. Es un programa que captura
  * diferentes especies de animales con sus respectivas poblaciones, y nos
- * permite verlos después. 
+ * permite verlos despues. 
 */
 
 /*
@@ -21,7 +21,7 @@
 
 /*
  *Nota
- *Si se escribe un número diferente
+ *Si se escribe un numero diferente
  *a las opciones del menu
  *el codigo se cerrara automaticamente.
  */
