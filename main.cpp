@@ -8,14 +8,20 @@
 /*
  * Descripcion este es un proyecto para la clase de Pensamiento
  * Computacional Orientado a Objetos. Es un programa que captura
- * diferentes tipos de animales con sus respectivas poblaciones, y nos
+ * diferentes especies de animales con sus respectivas poblaciones, y nos
  * permite verlos después. 
 */
 
+/*
+ *Nota
+ *A la hora de introducir una especie nueva
+ *no escribir espacio
+ *todo debe estar junto
+ */
+
 //Bibliotecas
 #include <iostream>   //para imprimir.
-#include "Animales.h" //donde estan los objetos de mi proyecto.
-#include "Reserva.h"
+#include "Reserva.h" //donde estan todos los objetos de mi proyecto
 
 using namespace std;
 
@@ -41,7 +47,6 @@ int main(int argc, char* argv[]){
       reserva.creaAnfibios();
       string temp_especie;
       int temp_poblacion;
-      int temp_piel;
       int opcion = 0;
 
     //Ciclo para que el sistema siga corriendo mientras no elija la opcion salir.
@@ -55,21 +60,22 @@ int main(int argc, char* argv[]){
           //Switch donde dependiendo la eleccion efectua un diferente procedimiento
           switch(opcion){
 
-              //Caso 1 que imprime los empleados de tipo asalariado
+              //Caso 1 que imprime los animales de tipo Mamifero
               case 1:
                   reserva.muestraMamiferos();
                 break;
 
-              //Caso 2 que imprime los empleados de tipo Por Hora
+              //Caso 2 que imprime los animales de tipo Reptil
               case 2:
                   reserva.muestraReptiles();
                 break;
 
-              //Caso 3 que imprime los empleados de tipo Practicantes
+              //Caso 3 que imprime los animales de tipo Anfibio
               case 3:
                   reserva.muestraAnfibios();
                 break;
 
+             //Caso 4 agrega un mamifero solicitando la especie y la poblacion
               case 4:
                   cout<< "Dime la especie: " ;
                   cin >> temp_especie;
@@ -78,6 +84,7 @@ int main(int argc, char* argv[]){
                   reserva.agregaMamifero(temp_especie, temp_poblacion);
                 break;
 
+              //Caso 5 agrega un reptil solicitando la especie y la poblacion
               case 5:
                   cout<< "Dime la especie: " ;
                   cin >> temp_especie;;
@@ -86,6 +93,7 @@ int main(int argc, char* argv[]){
                   reserva.agregaReptil(temp_especie, temp_poblacion);
                 break;
 
+              //Caso 6 agrega un anfibio solicitando la especie y la poblacion
               case 6:
                   cout<< "Dime la especie: " ;
                   cin >> temp_especie;
