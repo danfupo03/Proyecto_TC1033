@@ -16,7 +16,14 @@
  *Nota
  *A la hora de introducir una especie nueva
  *no escribir espacio
- *todo debe estar junto
+ *todo debe estar junto.
+ */
+
+/*
+ *Nota
+ *Si se escribe un número diferente
+ *a las opciones del menu
+ *el codigo se cerrara automaticamente.
  */
 
 //Bibliotecas
