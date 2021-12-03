@@ -12,13 +12,14 @@
 
 using namespace std;
 
+//Declaro clase Anfibio que hereda de Animal
 class Anfibio: public Animal
 {
 
     public:
-        //Constructor
-        Anfibio(){}
-        Anfibio(string esp, int pob): Animal(esp, pob, 0){
+
+        Anfibio(){} //Constructor default
+        Anfibio(string esp, int pob): Animal(esp, pob){ //Constructor que recibe especie y poblacion
         }
     
 };
