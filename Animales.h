@@ -11,13 +11,6 @@
  * Mamiferos, Anfibios y Reptiles
  */
 
-/*
- *Nota
- *A la hora de introducir una especie nueva
- *no escribir espacio
- *todo debe estar junto
- */
-
 #ifndef ANIMALES_H
 #define ANIMALES_H
 
