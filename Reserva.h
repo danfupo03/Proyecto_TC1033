@@ -24,7 +24,7 @@ using namespace std;
 #include "Reptiles.h"
 #include "Anfibios.h"
 
-const int MAX = 100; //constante de tamaño de arreglos
+const int MAX = 100; //constante de tamano de arreglos
 
 class Reserva {
 
