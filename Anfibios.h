@@ -1,7 +1,6 @@
 /*
- * Proyecto TC1033
+ * Registration of populations and species in a reserve
  * Daniel Emilio Fuentes Portaluppi
- * A01708302
  * 03/12/21
  */
 
@@ -12,14 +11,14 @@
 
 using namespace std;
 
-//Declaro clase Anfibio que hereda de Animal
+// I declare "Anfibio" class that inherits from "Animal"
 class Anfibio: public Animal
 {
 
     public:
 
-        Anfibio(){} //Constructor default
-        Anfibio(string esp, int pob): Animal(esp, pob){ //Constructor que recibe especie y poblacion
+        Anfibio(){} //Default constructor
+        Anfibio(string esp, int pob): Animal(esp, pob){ // Constructor that receives species and population
         }
     
 };
