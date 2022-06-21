@@ -1,14 +1,13 @@
 /*
- * Proyecto TC1033
+ * Registration of populations and species in a reserve
  * Daniel Emilio Fuentes Portaluppi
- * A01708302
  * 03/12/21
  */
 
 /*
- * Clase Animal contiene los métodos genéricos para el manejo de animales
- * y tiene 3 clases hijas que son tipos de animales:
- * Mamiferos, Anfibios y Reptiles
+ * Animal class contains the generic methods for handling animals
+ * and has 3 child classes that are types of animals:
+ * Mammals, Amphibians and Reptiles
  */
 
 #ifndef ANIMALES_H
@@ -19,7 +18,7 @@
 
 using namespace std;
 
-//Declaración de la clase Animal
+// Animal class declaration
 class Animal{
 
     protected:
@@ -36,7 +35,7 @@ class Animal{
             poblacion = pob;
         }
 
-        //Getter de especie y poblacion
+        //Getter de "especie" y "poblacion"
     
         /*
          * getter especie
