@@ -1,27 +1,21 @@
-Proyecto creado por Daniel Emilio Fuentes Portaluppi A01708302
+Project created by Daniel Emilio Fuentes Portaluppi
 
 
-# Proyecto_TC1033
-Este es el proyecto de la unidad formativa TC1033
+# Project_TC1033
+This is the project of the training unit TC1033
 
 
-# Registro de poblaciones y especies en una reserva
+# Registration of populations and species in a reserve
 
-## Contexto
+## Context
 
-Hay muchas reservas por todo el mundo y muchas veces científicos requieren una forma en la que puedan registrar especies y sus poblaciones. Un ejemplo de este tipo de reservas es el parque nacional El Cimatario que se enceuntra en el estado de Querétaro. En este lugar habitan muchas especies y puede llegar a ser difícil mantener un registro de todas.
+There are many reserves around the world and many times scientists require a way in which they can record species and their populations. An example of this type of reserve is the El Cimatario National Park, which is located in the state of Querétaro. Many species live here and it can be difficult to keep track of all of them.
 
-## Funcionalidad
+## Functionality
 
-Este código permite mantener un registro de todas las especies que habitan en la reserva además de sus poblaciones y si tiempo después se descubre que una especie nueva emigró a esa reserva se puede añadir directamente al código con una de las opciones. Además el registro se divide en mamíferos, reptiles y anfibios para que se pueda llevar el conteo de una manera más ordenada.
+This code makes it possible to keep a record of all the species that inhabit the reserve as well as their populations, and if it is later discovered that a new species has migrated to that reserve, it can be added directly to the code with one of the options. In addition, the registry is divided into mammals, reptiles and amphibians so that the count can be carried out in a more orderly manner.
 
-## Consideraciones
+## Considerations
 
-- A la hora de introducir una especie nueva no escribir espacio todo debe estar junto. 
-- Si se escribe un número diferente a las opciones del menu el codigo se cerrara automaticamente.
-
-## Correcciones
-1.  Se corrigió el UML por segunda ocasión, añadiendo la versión final de la composición.
-2.  Se añadieron los datos personales a los archivos y se añadieron comentarios que explican la función del código.
-3.  Se eliminó la función de aumentarPoblación.
-4.  Se añadió el tema de composición al código y se ajusto el ReadMe para que estuviera adecuado con el nuevo código. 
+- When introducing a new species, do not write a space, everything must be together.
+- If you write a different number to the menu options the code will close automatically.
