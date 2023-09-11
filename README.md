@@ -2,7 +2,7 @@ Project created by Daniel Emilio Fuentes Portaluppi
 
 
 # Project_TC1033
-This is the project of the training unit TC1033
+This is the project of the training unit TC1033 (Object-oriented programming)
 
 
 # Registration of populations and species in a reserve
@@ -17,5 +17,5 @@ This code makes it possible to keep a record of all the species that inhabit the
 
 ## Considerations
 
-- When introducing a new species, do not write a space, everything must be together.
-- If you write a different number to the menu options the code will close automatically.
+* When introducing a new species, do not write a space, everything must be together.
+* If you write a different number to the menu options the code will close automatically.
